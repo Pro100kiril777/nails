@@ -1,0 +1,100 @@
+.header {
+  background-color: #ebd8bc;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.wrapperHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapperHeaderNavigation {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.phoneNumberLinkHeader {
+  color: #643843;
+  transition: 0.3s;
+}
+
+.phoneNumberLinkHeader:focus,
+.phoneNumberLinkHeader:hover {
+  color: #591c2b;
+}
+
+.burgerMenuBtn,
+.closeBurgerBtn {
+  cursor: pointer;
+}
+
+.wrapperBurgerMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.2s, opacity 0.3s;
+}
+
+.burgerMenu {
+  background-color: #f5eee6;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 30px;
+  width: 45%;
+  height: 100%;
+}
+
+.openBurgerMenuBtn{
+    transform: translate(0);
+    opacity: 1;
+}
+
+.closeBurgerBtn {
+  margin-bottom: 30px;
+}
+
+.titleUserName {
+  font-family: "Comfortaa";
+  text-align: center;
+  color: #643843;
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+.loadMoreBurgerBtn {
+  background-color: transparent;
+  color: #643843;
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: none;
+}
+
+.loadMoreSVG {
+  transform: rotate(180deg);
+}
+
+.exitToLogIn {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #643843;
+}

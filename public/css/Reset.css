@@ -1,0 +1,128 @@
+/* cormorant-sc-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cormorant-sc-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* cormorant-sc-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/cormorant-sc-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* cormorant-sc-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/cormorant-sc-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* cormorant-sc-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/cormorant-sc-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* comfortaa-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/comfortaa-v45-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* comfortaa-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/comfortaa-v45-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* comfortaa-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/comfortaa-v45-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* comfortaa-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/comfortaa-v45-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+scroll-behavior: smooth; /* Для плавного скролла по якорям и по сайту */
+font-family: 'Comfortaa';
+background-color: #ebd8bc57;
+}
+
+section{
+  position: relative; /* делаем позиционирование в секциях, удобно для размещения абсолютных блоков */
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul { /* Убираем лишние отступы, как внутренние, так и внешние */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+  font-family: 'Cormorant SC';
+}
+
+ul, ol {
+  list-style: none; /* Убираем базовые цифры и пометки списков */
+}
+
+a {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+
+button {
+  cursor: pointer; /* Добавляем палец при наведении на кнопку */
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg{
+  fill: #643843;
+  transition: 0.3s;
+}
+
+svg:hover, svg:focus{
+  fill: #591c2b;
+}
+
+@media (min-width: 1158px){
+  .container{
+    max-width: 1440px;
+    padding: 15px 140px;
+    margin: 0 auto;
+  }
+}

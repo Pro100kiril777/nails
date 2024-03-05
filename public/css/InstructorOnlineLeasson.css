@@ -1,0 +1,39 @@
+.wrapperinstructorOnlineLeasson{
+    text-align: center;
+}
+
+.titleInstructorOnlineLeasson{
+    font-size: 52px;
+    font-weight: 500;
+    color: #643843;
+    margin-bottom: 54px;
+}
+
+.leasson{
+    margin-bottom: 90px;
+}
+
+.titleSentHW{
+    font-size: 32px;
+    font-weight: 500;
+    color: #643843;
+}
+
+
+.sentHomeWorkBtn{
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #643843;
+    font-family: 'Comfortaa';
+    padding: 14px 77px;
+    margin-bottom: 100px;
+    transition: 0.3s;
+}
+
+.sentHomeWorkBtn:hover, .sentHomeWorkBtn:focus{
+    background-color: #591c2b;
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.15);
+}

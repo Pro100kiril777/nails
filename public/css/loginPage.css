@@ -1,0 +1,118 @@
+.startPageLogin{
+    padding-top: 80px;
+}
+
+.wrapperStartPage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.startPageLogin > .wrapperStartPage > article{
+    max-width: 50%;
+}
+
+.TitleOnStartPage{
+    font-size: 52px;
+    font-weight: 500;
+    color: #643843;
+    margin-bottom: 15px;
+}
+
+.textOnStartPage{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.forgotPasswordLink{
+    text-decoration: underline;
+    color: #643843;
+    font-size: 16px;
+}
+
+.wrapperForm{
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #EBD8BC;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 560px;
+}
+
+.titleLogIn{
+    color: #643843;
+    font-size: 44px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.mainFormLogIn{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.LabelLogIn{
+    width: 100%;
+    height: 65px;
+    position: relative;
+    border: 1px solid #643843;
+    border-radius: 10px;
+    display: block;
+}
+
+.InputLogIn{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 22px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #643843;
+}
+
+.InputLogInPlaceholder{
+    position: absolute;
+    color: #643843;
+    font-size: 22px;
+    left: 5%;
+    top: 25%;
+    opacity: 0.5;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: text;
+}
+
+.InputLogIn:focus + .InputLogInPlaceholder,
+.InputLogIn:valid + .InputLogInPlaceholder{
+    top: -25%;
+    background-color: #EBD8BC;
+    opacity: 1;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.logInBtn{
+    color: #fff;
+    border: 0;
+    border-radius: 10px; 
+    background-color: #643843;
+    letter-spacing: 1.2px;
+    max-width: 50%;
+    margin: 15px auto 0;
+    padding: 15px 75px;
+    transition: 0.3s;
+}
+
+.logInBtn:focus, .logInBtn:hover{
+    background-color: #591c2b;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="public/mainLogo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/App.css">
+    <title>Courses</title>
+</head>
+<body>
+    <div className="JustWrapper">
+            <header className="header">
+                <div className="container wrapperHeader">
+                    <img className='headerLogoMain' src="./public/mainLogo.svg" alt="Logo" />
+                    <div className="wrapperHeaderNavigation">
+                        <a href="tel:+380680333203" className="phoneNumberLinkHeader">+380 68 033 32 03</a>
+                        <a href="https://www.instagram.com/ivanna_katrych?igsh=NTd6cjIzejlqNmF0" className="mainLinkToInstagram" target='_blank' rel='noreferrer'><svg className='mainLinkToInstagramSVG' width={50} height={50}><use xlinkHref={${sprite}#icon-instagram} /></svg></a>
+                    </div>
+                </div>
+            </header>
+            <section className="startPageLogin">
+                <div className="container wrapperStartPage">
+                    <article className="HelloOnCourses">
+                        <h1 className="TitleOnStartPage">ВІТАЄМО НА КУРСІ !</h1>
+                        <p className="textOnStartPage">Увійдіть в систему з логіном і паролем, який 
+                            ми надали вам, щоб отримати доступ до курсів</p>
+                        <a href="" className="forgotPasswordLink">Не отримали пароль або логін?</a>
+                    </article>
+                    <article className="wrapperForm">
+                        <h2 className="titleLogIn">вхід</h2>    
+                        <form id="forma" className="mainFormLogIn" >
+                            <label htmlFor="InputLogInID" className="LabelLogIn">
+                                <input type="text" className="InputLogIn" id="InputLogInID" required />
+                                <span className="InputLogInPlaceholder">Логін</span>
+                            </label>
+                            <label htmlFor="InputPassID" className="LabelLogIn">
+                                <input type="password" className="InputLogIn" id="InputPassID" required />
+                                <span className="InputLogInPlaceholder">Пароль</span>
+                            </label>
+                            <button className="logInBtn" id="mainLogInBtn" >УВІЙТИ</button>
+                        </form>
+                    </article>
+                </div>
+            </section>
+        </div>
+</body>
+<script>
+    document.getElementById("forma").addEventListener("submit", async function(event){
+        event.preventDefault();
+        const url = "http://localhost:3000/mail";
+        const data = { 
+        Login: document.getElementById("InputLogInID").value,
+        Passsword: document.getElementById("InputPassID").value,
+        };
+        
+        await fetch(url, {    
+                method: "POST",
+                body: JSON.stringify(data),
+                headers:{
+                "Content-Type":"application/json",
+                } 
+            }).then(response => response.text())
+            .then(text => {
+                if (text=="true") {
+                    document.cookie = "user=1";
+                    window.location.href = '/mainpage';
+                }
+                else {
+                    alert("wrong");
+                    // сюди добав обробку помилки
+                }
+                
+            })
+            .catch(error => console.error(error));
+    
+    
+    
+    });
+</script>
+</html>
